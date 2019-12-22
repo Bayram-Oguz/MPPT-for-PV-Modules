@@ -1,0 +1,15 @@
+//MATLAB FUNCTION1
+function x  = iff( dp , dv)
+xy=0:0.001:1;
+persistent i;
+i=50;
+x=xy(i);
+if((dp>=0&&dv>=0) || (dp<=0&&dv<=0))%% voltajın arttırılmak ıstenıldıgı işlem
+i=i+1;
+x=xy(i);
+elseif((dp<=0&&dv>=0) || (dp>=1&&dv<=0))
+i=i-1;
+x=xy(i);
+%%voltajın azaltılmak ıstenıldıgı işlem
+end
+end
