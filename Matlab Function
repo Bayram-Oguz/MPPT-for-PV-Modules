@@ -1,4 +1,4 @@
-//MATLAB FUNCTION1
+%MATLAB FUNCTION1
 function x  = iff( dp , dv)
 xy=0:0.001:1;
 persistent i;
